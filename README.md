@@ -44,7 +44,7 @@ thuman_demo/
 └── parameter        --- We use perspecive camera model to render images
     └── 0001   
         ├── xxx_extrinsic.npy  --- the extrinsic of view xxx (3x4 world-to-camera matrix)
-        ├── xxx_intrinsic.npy  --- the intrinsic of view xxx (3x3 matrix)
+        ├── xxx_intrinsic.npy  --- the intrinsic of view xxx (3x3 matrix, the y-axis need to be flipped)
 ```
 
 ### Inference on a single stereo matching pair
@@ -55,7 +55,7 @@ python -m app.inference --config configs/thuman_demo.yaml --dataroot [the direct
 ```
 
 ### Visualization on a single stereo matching pair
-The results will be saved in `results/thuman_demo/`. To visualize the results, use [MeshLab]() to open `results/thuman_demo/fusion000.ply` and apply Possion Reconstruction with `depth=10`.
+The results will be saved in `results/thuman_demo/`. To visualize the results, use [MeshLab](https://www.meshlab.net/) to open `results/thuman_demo/fusion000.ply` and apply Possion Reconstruction with `depth=10`.
 
 ### Inference on multiple stereo matching pairs
 To inference on multiple stereo matching pairs of DEMO samples, please run the following script.
@@ -71,7 +71,7 @@ python -m app.inference --config configs/thuman_demo_multi_45.yaml --dataroot [t
 ```
 
 ### Naive multi-view fusion and visualization on the results
-The results will be saved in `results/thuman_demo_multi/`. To fuse multi-view depth point clouds, use [MeshLab]() to open `results/thuman_demo_multi/fusion000.ply` and apply Possion Reconstruction with `depth=10`.
+The results will be saved in `results/thuman_demo_multi/`. To fuse multi-view depth point clouds, use [MeshLab](https://www.meshlab.net/) to open `results/thuman_demo_multi/fusion000.ply` and apply Possion Reconstruction with `depth=10`.
 
 ## Run the code on the THUman5.0 dataset
 
