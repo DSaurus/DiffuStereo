@@ -133,3 +133,15 @@ If you find this code useful for your research, please use the following BibTeX 
     year = {2022}
 }
 ```
+
+## Acknowledgments
+
+Our project is benefit from these great resources:
+
+- [Diffusion Probabilistic Models for 3D Point Cloud Generation](https://github.com/luost26/diffusion-point-cloud)
+- [Diffusion Models Beat GANS on Image Synthesis](https://github.com/openai/guided-diffusion)
+- [RAFT-Stereo: Multilevel Recurrent Field Transforms for Stereo Matching](https://github.com/princeton-vl/RAFT-Stereo)
+- [StereoPIFu: Depth Aware Clothed Human Digitization via Stereo Vision](https://github.com/CrisHY1995/StereoPIFu_Code)
+- [POP: The Power of Points for Modeling Humans in Clothing](https://github.com/qianlim/POP)
+
+Thanks for their sharing code.

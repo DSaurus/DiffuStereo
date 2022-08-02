@@ -1,0 +1,44 @@
+name: 'thuman_demo'
+logdir: 'log/thuman_demo'
+load_db_net_checkpoint: 'checkpoints/diffustereo_2k_d20.pth'
+checkpoint_path: 'checkpoints'
+result_path: 'results'
+lr: 2e-5
+
+dataset:
+  serial_batches: False
+  pin_memory: True
+  img_path: 'img/%s/%d.png'
+  mask_path: 'mask/%s/%d.png'
+  depth_path: 'depth_db/%s/%d.npz'
+  depth_db_path: 'depth_db/%s/%d.npz'
+  param_in_path: 'parameter/%s/%d_intrinsic.npy'
+  param_ex_path: 'parameter/%s/%d_extrinsic.npy'
+  obj_path: 'norm_obj/%s/%s.obj'
+  angle: 20
+
+  taichi_intrinsic: False
+  input_size: 512
+  num_views: 6
+
+  aug:
+    random_transform: False
+    random_color: False
+    bri: 0.3
+    con: 0.3
+    sat: 0.3
+    hue: 0.1
+    scale_ratio: 0.05
+    crop_ratio: 0.025
+    flip_x: False
+
+mvs_model:
+  noise: True
+  time: True
+  is_2k: True
+  steps: 30
+
+record:
+  save_freq: 400
+  show_freq: 400
+  print_freq: 20

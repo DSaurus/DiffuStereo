@@ -2,10 +2,9 @@
 
 ![image](assets/thuman5_0.jpg)
 
-### DiffuStereo: High Quality Human Reconstruction via Diffusion-based Stereo Using Sparse Cameras
-Ruizhi Shao, Zerong Zheng, Hongwen Zhang, Jingxiang Sun, Yebin Liu
-
-[[Project Page]](http://liuyebin.com/diffustereo/diffustereo.html)
+> DiffuStereo: High Quality Human Reconstruction via Diffusion-based Stereo Using Sparse Cameras
+> Ruizhi Shao, Zerong Zheng, Hongwen Zhang, Jingxiang Sun, Yebin Liu
+> [[Project Page]](http://liuyebin.com/diffustereo/diffustereo.html)
 
 
 This dataset contains 10 multi-view video sequences used in our paper "DiffuStereo: High Quality Human Reconstruction via Diffusion-based Stereo Using Sparse Cameras". They are captured with 32 well-calibrated RGB cameras in 30 fps, with a resolution of 4096x3000 and lengths ranging from 1000 to 5000 frames.
