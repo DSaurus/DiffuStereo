@@ -108,7 +108,11 @@ python -m app.inference --config configs/real_demo.yaml --dataroot [the director
 ```
 
 ### Visualization on one stereo matching pair
-The results will be saved in `results/real_demo/`. To visualize the results, use [MeshLab]() to open `results/real_demo/fusion000.ply` and apply Possion Reconstruction with `depth=10`.
+The results will be saved in `results/real_demo/`. To visualize the results, use [MeshLab]() to open `results/real_demo/fusion000.ply` and apply Possion Reconstruction with `depth=11` or `depth=10`.
+
+<video width="720" height="" autoplay>
+  <source src="assets/video_real_demo.mp4" type="video/mp4">
+</video>
 
 ### Multi-view fusion
 Naive multi-view fusion based on `Poisson Reconstruction` will generate noise and artifacts. We recommend using traditional multi-view fusion algorithm or programming our proposed `light-weight multi-view fusion` to reproduce the final results.
