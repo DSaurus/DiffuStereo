@@ -57,7 +57,9 @@ python -m app.inference --config configs/thuman_demo.yaml --dataroot [the direct
 ```
 
 ### Visualization on a single stereo matching pair
-The results will be saved in `results/thuman_demo/`. To visualize the results, use [MeshLab](https://www.meshlab.net/) to open `results/thuman_demo/fusion000.ply` and apply Possion Reconstruction with `depth=10`.
+The results will be saved in `results/thuman_demo/`. To visualize the results, use [MeshLab](https://www.meshlab.net/) to open `results/thuman_demo/fusion000.ply` and apply Possion Reconstruction with `depth=11` or `depth=10`.
+
+![video](assets/video_thuman_demo_single.gif)
 
 ### Inference on multiple stereo matching pairs
 To inference on multiple stereo matching pairs of DEMO samples, please run the following script.
@@ -73,7 +75,9 @@ python -m app.inference --config configs/thuman_demo_multi_45.yaml --dataroot [t
 ```
 
 ### Naive multi-view fusion and visualization on the results
-The results will be saved in `results/thuman_demo_multi/`. To fuse multi-view depth point clouds, use [MeshLab](https://www.meshlab.net/) to open `results/thuman_demo_multi/fusion000.ply` and apply Possion Reconstruction with `depth=10`.
+The results will be saved in `results/thuman_demo_multi/`. To simply fuse multi-view depth point clouds, use [MeshLab](https://www.meshlab.net/) to open `results/thuman_demo_multi/fusion000.ply` and apply Possion Reconstruction with `depth=11` or `depth=10`.
+
+![video](assets/video_thuman_demo.gif)
 
 ## Run the code on the THUman5.0 dataset
 
@@ -110,12 +114,10 @@ python -m app.inference --config configs/real_demo.yaml --dataroot [the director
 ### Visualization on one stereo matching pair
 The results will be saved in `results/real_demo/`. To visualize the results, use [MeshLab]() to open `results/real_demo/fusion000.ply` and apply Possion Reconstruction with `depth=11` or `depth=10`.
 
-<video width="720" height="" autoplay>
-  <source src="assets/video_real_demo.mp4" type="video/mp4">
-</video>
+![video](assets/video_real_demo.gif)
 
 ### Multi-view fusion
-Naive multi-view fusion based on `Poisson Reconstruction` will generate noise and artifacts. We recommend using traditional multi-view fusion algorithm or programming our proposed `light-weight multi-view fusion` to reproduce the final results.
+On account of calibration error and the complicated lighting environment in the real-world dataset, naive multi-view fusion based on `Poisson Reconstruction` will generate noise and artifacts. We recommend using traditional multi-view fusion algorithm or programming our proposed `light-weight multi-view fusion` to reproduce the final results.
 
 ## Training on the 3D human scan dataset
 
