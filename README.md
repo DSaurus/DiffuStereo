@@ -21,6 +21,8 @@ Please see [INSTALL.md](INSTALL.md) for manual installation.
 
 We will provide the pretrained diffusion models for stereo matching including 20 degree and 45 degree as soon as possible. You can download and put them into the `checkpoints/` directory.
 
+[Download: pretrained model for 20 degree stereo matching](https://mailstsinghuaeducn-my.sharepoint.com/:u:/g/personal/shaorz20_mails_tsinghua_edu_cn/EUgJEhePS11On81j2r7NGj8Bj8XZmRc0LqhD7kxUrNJBJA?e=TXXoPg)
+
 ## Run the code on the THUman2.0 dataset
 
 Please see [THUman2.0](THUMAN2_0.md) to download DEMO samples and the dataset.

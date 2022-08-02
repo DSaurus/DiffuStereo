@@ -15,8 +15,6 @@ class NeuMVSDModel(nn.Module):
         self.feature_net_c = UnetATT(11, 32, channel_mults=(1, 2, 4, 8, 8),
                                    inner_channel=32, norm_groups=16, res_blocks=3)
         self.feature_conv = nn.Conv2d(32, 1, 1, padding=0)
-        self.mask_net1 = UnetATT(11+32, 1, channel_mults=(1, 2, 4, 8, 8),
-                                inner_channel=32, norm_groups=8, res_blocks=3)
         self.flow_net3 = UnetATT(11+32, 1, channel_mults=(1, 2, 4, 8, 8),
                                  inner_channel=32, norm_groups=16, res_blocks=3, with_noise_level_emb=opt.time)
         
