@@ -46,7 +46,7 @@ thuman_demo/
 └── parameter        --- We use perspecive camera model to render images
     └── 0001   
         ├── xxx_extrinsic.npy  --- the extrinsic of view xxx (3x4 world-to-camera matrix)
-        ├── xxx_intrinsic.npy  --- the intrinsic of view xxx (3x3 matrix, the y-axis need to be flipped)
+        ├── xxx_intrinsic.npy  --- the intrinsic of view xxx (3x3 matrix)
 ```
 
 ### Inference on a single stereo matching pair
