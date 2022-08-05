@@ -43,7 +43,7 @@ thuman_demo/
 ├── normal_db
 │   └── 0001
 │       ├── xxx.png  --- the normal of view xxx (reconstructed by DoubleField)
-└── parameter        --- We use perspecive camera model to render images
+└── parameter        --- We use perspective camera model to render images
     └── 0001   
         ├── xxx_extrinsic.npy  --- the extrinsic of view xxx (3x4 world-to-camera matrix)
         ├── xxx_intrinsic.npy  --- the intrinsic of view xxx (3x3 matrix)
@@ -127,7 +127,7 @@ Please see [THUman2.0](THUman2_0.md) to download DEMO samples and the dataset.
 
 ## Run the code on the custom dataset
 
-Please see [CUSTOM](CUSTOM.md).
+To run the code on the custom dataset, please see [CUSTOM](CUSTOM.md). We also clarify our camera model and provide some examples to render depth and normal maps.
 
 ## Citation
 
